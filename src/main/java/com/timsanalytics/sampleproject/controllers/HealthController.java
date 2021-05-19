@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
 
     @ResponseBody
-    @RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Health Check", description = "Health Check", tags = {"Health"}, security = @SecurityRequirement(name = "bearerAuth"))
     public ResponseEntity<KeyValue> getHealthCheck() {
         try {

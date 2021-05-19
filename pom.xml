@@ -8,25 +8,37 @@
         <version>2.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.timsanalytics</groupId>
     <artifactId>sample-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sample-project</name>
     <description>Sample Spring project for testing</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
+
     <dependencies>
+
+        <!-- SPRINGFRAMEWORK -->
+        <!-- Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <!-- Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- / SPRINGFRAMEWORK -->
 
 
         <!-- SUPPORT -->
