@@ -15,7 +15,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     // For Swagger
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addRedirectViewController("/", "/hello");
+        registry.addRedirectViewController("/", "/swagger-ui.html");
     }
 
 }
